@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background-color: #dcdcdc; margin:0 auto;}
+body,td {font-family: Arial, Helvetica, sans-serif;	font-size: 12px; color: #444759;}
+th{	height:24px; background-color:#FF9900; background-image:url('../Imagenes/bg_th1.jpg');	color:#FFFFFF; border-right:1px solid #CC6600;}
+
+.modalBackground
+{
+	background-color: #C0C0C0;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.cssTablaPanelEmptyText
+{
+	border: solid 0px #DEDEDE;
+	font-size: 14px;
+	font-family: Arial;
+	color: #3A6F86;
+	text-align:center;	
+	background-color: #F8F8F8;	
+}
+.cssTablaPanel
+{
+	border: solid 1px #DEDEDE;
+	background-color: #F8F8F8;
+	font-family: Arial;
+	font-size:10px;
+}
+
+/* xTABLAS (i) */
+.tabla_pagina{width:100%; }
+	.contorno_sup_izq{width:15px; height:12px;}
+	.contorno_sup_rep{background:url('../Imagenes/contorno_sup.jpg') repeat-x bottom;}
+	.contorno_sup_der{width:15px;}
+	.contorno_centro_izq{background:url('../Imagenes/contorno_izq.jpg') repeat-y right;}
+	.contorno_centro_der{background:url('../Imagenes/contorno_der.jpg') repeat-y left;}
+	.contorno_inf_izq{width:15px; height:12px; background:url('../Imagenes/contorno_inf_izq.jpg') no-repeat right top}
+	.contorno_inf_rep{background:url('../Imagenes/contorno_inf.jpg') repeat-x top;}
+	.contorno_inf_der{width:15px; background:url('../Imagenes/contorno_inf_der.jpg') no-repeat left top}
+
+.tabla_principal{background:#fff;}
+	.cabecera{height:85px;background:url('../Imagenes/cabecera_bg.jpg');}
+	.menu{height:26px;background:url('../Imagenes/menu_bg.jpg') #113362; font-size:11px;}
+	.cuerpo{height:425px;}
+	.piedepag{height:27px;background:url('../Imagenes/piedepag_bg.jpg') #e7e7e7; color:#757e89; text-align:center;}
+
+.tabla_cuerpo{width:96%; border:0; border-top:none; border-bottom:none; margin:auto}
+
+/* xMENU (Temp) */
+.menu_txt{color:#fff; text-transform:uppercase; font-size:10px; font-weight:bold;}
+.menu_sep{color:#ffa700; padding-left:15px; padding-right:15px;}
+
+/* xVARIOS */
+.tit_01{color: #001166; font-size: 16px; font-weight: bold; padding:0; padding-left:10px;}
+.tit_02{color: #001166; font-size: 13px; font-weight: 600; padding:0; padding-left:3px;}
+
+/* xFORM(f) */
+
+.caja_p{ border:1px inset #ccc;	width:70px;	padding:3px; color:#4B4F67;	font-family:Arial; font-size:12px; text-transform:uppercase;}
+.caja_m{ border:1px inset #ccc; width:120px; padding:3px; color:#4B4F67; font-family:Arial; font-size:12px; text-transform:uppercase;}
+.caja_g{ border:1px inset #ccc;	width:170px; padding:3px; color:#4B4F67; font-family:Arial; font-size:12px; text-transform:uppercase;}
+.button{ border:1px solid #F7A806; width:100px;	height:25px; background-color:#FBFBFC; color:#003399; font-size:11px;font-family:Arial, Verdana, Helvetica, sans-serif;}
+.button_g{ border:1px solid #F7A806; width:140px; height:25px; background-color:#FBFBFC; color: #003399; font-size:11px; font-family:Arial, Verdana, Helvetica, sans-serif;}
+.button_naranja_m{ border:0; width:80px; height:23px; color:#fff; font-size:11px;	font-weight:bold; font-family:Arial, Verdana, Helvetica, sans-serif; text-transform:uppercase; background:url('../Imagenes/btn_naranja_p.gif') no-repeat;}
+.button_naranja_g{ border:0; width:120px; height:23px; color:#fff; font-size:11px;	font-weight:bold; font-family:Arial, Verdana, Helvetica, sans-serif; text-transform:uppercase; background:url('../Imagenes/bg_th1.jpg') repeat-x;}
+.select{ border:1px inset #ccc;	width:125px; height:20px; color:#444857; font-size:12px; font-family:"Trebuchet MS", Arial;}
+.paginador{	background-color:#fbfbfd; background-image:url("../Imagenes/bg_tit1.jpg"); color:#fbfbfb; padding:4px; text-align:center; 	font-weight:bold;}
+
+/* xTEXTOS (i) */
+.txt_blanco{color:#fff;}
+.txt_egris{color:#757e89;}
+.txt_amarillo{color:#ffc700;text-decoration:none;}
+
+
+.mensj_textbox{border:0; background-color:Transparent;font-family:Arial; font-size:12px; color:#000000;padding-left:10px;}
+
+/* xENLACES (i) */
+/*
+a:link {	color: #FF6600;}
+a:visited {	color: #CC6600;}
+a:hover {	color: #FF9900;}
+a:active {	color: #010000;}
+*/
+
+

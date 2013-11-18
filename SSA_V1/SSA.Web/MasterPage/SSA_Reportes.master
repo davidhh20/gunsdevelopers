@@ -1,0 +1,39 @@
+<%@ Master Language="VB" CodeFile="SSA_Reportes.master.vb" Inherits="MasterPage_SSA_Reportes" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Sistema de Subasta de Artículos</title>
+    <link href="../css/general.css" rel="stylesheet" type="text/css" />        
+</head>
+<body style="margin:10px">
+    <form id="form1" runat="server">
+    <table >
+        <tr>
+            <td style="text-align:left; padding-left:5px;" class="tit_01"><asp:Label ID="lblTitulo" runat="server"></asp:Label>
+                <br /><br />
+            </td>
+            <td style="text-align:right;">
+                <input type="button" id="btnCphMasterPrint" value="Imprimir" onclick="window.print()" />
+                <input type="button" id="btnExportar" runat="server" value="Exportar a Excel" />
+                <input type="button" id="btnCphMasterClose" value="Cerrar" onclick="window.close()" />
+                <asp:HiddenField runat="server" ID="hidTitle" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#FFFFFF">
+    <div>
+        <asp:contentplaceholder id="cph" runat="server">
+        
+        </asp:contentplaceholder>
+    </div>
+    
+                </td>
+        </tr>
+    </table>
+
+
+    </form>
+</body>
+</html>
