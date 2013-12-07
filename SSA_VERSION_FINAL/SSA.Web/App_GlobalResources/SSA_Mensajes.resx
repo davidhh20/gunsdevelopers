@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgAdjudicarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de guardar los cambios de la adjudicación del artículo?</value>
+  </data>
+  <data name="msgAdjudicarConfirmarEnvio" xml:space="preserve">
+    <value>¿Esta seguro de enviar el correo?</value>
+  </data>
+  <data name="msgAdjudicarDuplicado" xml:space="preserve">
+    <value>No se pude tener dos adjudicaciones activas.</value>
+  </data>
+  <data name="msgAdjudicarErrorEnvioCorreo" xml:space="preserve">
+    <value>Ocurrió un error al enviar el correo al postor.</value>
+  </data>
+  <data name="msgAdjudicarErrorRegistro" xml:space="preserve">
+    <value>Ocurrió un error de sistema al adjudicar el artículo.</value>
+  </data>
+  <data name="msgAdjudicarExitoEnvioCorreo" xml:space="preserve">
+    <value>Se envió satisfactoriamente el correo al postor.</value>
+  </data>
+  <data name="msgAdjudicarExitoRegistro" xml:space="preserve">
+    <value>Se registro la adjudicación correctamente.</value>
+  </data>
+  <data name="msgAdjudicarNoHayCheck" xml:space="preserve">
+    <value>Debe seleccionar por lo menos un check para adjudicar.</value>
+  </data>
+  <data name="msgAdjudicarNoHayCorreo" xml:space="preserve">
+    <value>No hay ningún email disponible para el envío.</value>
+  </data>
+  <data name="msgAdjudicarVendidoConfirmar" xml:space="preserve">
+    <value>¿Desea adjudicar y colocar como vendido el artículo?</value>
+  </data>
+  <data name="msgAdjudicarVendidoError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al cambiar a estado vendido.</value>
+  </data>
+  <data name="msgAdjudicarVendidoExito" xml:space="preserve">
+    <value>Se cambio a estado vendido.</value>
+  </data>
+  <data name="msgAdjudicarVendidoNoHay" xml:space="preserve">
+    <value>Seleccione por lo menos una oferta para la venta.</value>
+  </data>
+  <data name="msgAdjuntarConfirmarCarga" xml:space="preserve">
+    <value>¿Desea anexar la imagen a este artículo?</value>
+  </data>
+  <data name="msgAdjuntarConfirmarEliminar" xml:space="preserve">
+    <value>¿Desea eliminar la foto?</value>
+  </data>
+  <data name="msgAdjuntarNoHayArchivo" xml:space="preserve">
+    <value>Seleccione una imagen para anexar.</value>
+  </data>
+  <data name="msgAdjuntarSinExtension" xml:space="preserve">
+    <value>La extensión del archivo no es válido\nSolo se permiten {0}.</value>
+  </data>
+  <data name="msgArticuloConfirmarEliminar" xml:space="preserve">
+    <value>¿Esta seguro de eliminar el artículo {0}?</value>
+  </data>
+  <data name="msgArticuloConfirmarModificar" xml:space="preserve">
+    <value>¿Esta seguro de modificar los datos del artículo?</value>
+  </data>
+  <data name="msgArticuloConfirmarRegistro" xml:space="preserve">
+    <value>¿Esta seguro de registrar los datos del artículo?</value>
+  </data>
+  <data name="msgArticuloErrorEliminar" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar el artículo.</value>
+  </data>
+  <data name="msgArticuloErrorUnique" xml:space="preserve">
+    <value>El código de artículo ingresado ya existe.</value>
+  </data>
+  <data name="msgArticuloExitoEliminar" xml:space="preserve">
+    <value>Se eliminó satisfactoriamente el artículo.</value>
+  </data>
+  <data name="msgArticuloModificarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al modificar el artículo.</value>
+  </data>
+  <data name="msgArticuloModificarExito" xml:space="preserve">
+    <value>Se modificó los datos del artículo satisfactoriamente.</value>
+  </data>
+  <data name="msgArticuloNoHayFotos" xml:space="preserve">
+    <value>El artículo seleccionado no tiene fotos adjuntas.</value>
+  </data>
+  <data name="msgArticuloNoModificar" xml:space="preserve">
+    <value>Solo se puede modificar artículos en estado registrado.</value>
+  </data>
+  <data name="msgArticuloRegistroError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar el artículo.</value>
+  </data>
+  <data name="msgArticuloRegistroExito" xml:space="preserve">
+    <value>El artículo se registro satisfactoriamente.</value>
+  </data>
+  <data name="msgDetalleSubastaConfirmarEliminar" xml:space="preserve">
+    <value>¿Desea eliminar el artículo de la subasta?</value>
+  </data>
+  <data name="msgIntegridadReferencial" xml:space="preserve">
+    <value>No se puede eliminar el registro porque tiene registros asociados.</value>
+  </data>
+  <data name="msgMarcarRegistroError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al marcar al usuario.</value>
+  </data>
+  <data name="msgMarcarRegistroExito" xml:space="preserve">
+    <value>El usuario ha sido marcado satisfactoriamente.</value>
+  </data>
+  <data name="msgOfertaConfirmarEliminar" xml:space="preserve">
+    <value>¿Esta seguro de eliminar su oferta registrada?</value>
+  </data>
+  <data name="msgOfertaConfirmarRegistrar" xml:space="preserve">
+    <value>¿Esta seguro de registrar su oferta?</value>
+  </data>
+  <data name="msgOfertaErrorEliminar" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar la oferta.</value>
+  </data>
+  <data name="msgOfertaErrorRegistrar" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar la oferta.</value>
+  </data>
+  <data name="msgOfertaExitoEliminar" xml:space="preserve">
+    <value>La oferta ha sido eliminada satisfactoriamente.</value>
+  </data>
+  <data name="msgOfertaExitoRegistrar" xml:space="preserve">
+    <value>Se registro la oferta satisfactoriamente.</value>
+  </data>
+  <data name="msgOfertaNoSePuedeOfertar" xml:space="preserve">
+    <value>No se puede realizar la operación porque la fecha de hoy no esta en el rango de fecha de la subasta.</value>
+  </data>
+  <data name="msgOfertaSubastaCerrada" xml:space="preserve">
+    <value>La subasta de este artículo ya esta cerrada.</value>
+  </data>
+  <data name="msgOlvidoClaveErrorEnvio" xml:space="preserve">
+    <value>Ocurrió un error en el servidor al enviar el correo.</value>
+  </data>
+  <data name="msgOlvidoClaveExitoEnvio" xml:space="preserve">
+    <value>Se le envió a su correo su clave.</value>
+  </data>
+  <data name="msgOlvidoClaveNoHayUsuario" xml:space="preserve">
+    <value>Usuario o Correo no es correcto.</value>
+  </data>
+  <data name="msgParametroEliminarConfirmar" xml:space="preserve">
+    <value>¿Desea eliminar el parámetro?</value>
+  </data>
+  <data name="msgParametroEliminarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar el parámetro.</value>
+  </data>
+  <data name="msgParametroEliminarExito" xml:space="preserve">
+    <value>Se eliminó satisfactoriamente el parámetro.</value>
+  </data>
+  <data name="msgParametroEliminarNoSePuede" xml:space="preserve">
+    <value>El par\xE1metro no se puede eliminar.</value>
+  </data>
+  <data name="msgParametroModificarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de modificar los datos del parámetro?</value>
+  </data>
+  <data name="msgParametroModificarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al modificar el parámetro.</value>
+  </data>
+  <data name="msgParametroModificarExito" xml:space="preserve">
+    <value>Se modificó satisfactoriamente el parámetro.</value>
+  </data>
+  <data name="msgParametroModificarNoSePuede" xml:space="preserve">
+    <value>El par\xE1metro no se puede modificar.</value>
+  </data>
+  <data name="msgParametroRegistrarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de registrar el parámetro?</value>
+  </data>
+  <data name="msgParametroRegistrarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar el parámetro.</value>
+  </data>
+  <data name="msgParametroRegistrarExito" xml:space="preserve">
+    <value>Se registro satisfactoriamente el parámetro.</value>
+  </data>
+  <data name="msgRegistroUsuarioCancelar" xml:space="preserve">
+    <value>¿Esta seguro de cancelar el registro del usuario?</value>
+  </data>
+  <data name="msgRegistroUsuarioConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de registrar sus datos?</value>
+  </data>
+  <data name="msgRegistroUsuarioDuplicado" xml:space="preserve">
+    <value>Usuario registrado ya existe.</value>
+  </data>
+  <data name="msgRegistroUsuarioDuplicado2" xml:space="preserve">
+    <value>El nombre de usuario ya existe.</value>
+  </data>
+  <data name="msgRegistroUsuarioError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar el usuario.</value>
+  </data>
+  <data name="msgRegistroUsuarioExito" xml:space="preserve">
+    <value>Usuario registrado satisfactoriamente.</value>
+  </data>
+  <data name="msgReporteSubastaSinRegistro" xml:space="preserve">
+    <value>La subasta no tiene registros para listar.</value>
+  </data>
+  <data name="msgSeguridadNoHayUsuario" xml:space="preserve">
+    <value>Usuario o Clave no es correcto.</value>
+  </data>
+  <data name="msgSubastaCerrarConfirmar" xml:space="preserve">
+    <value>¿Desea cerrar la subasta?</value>
+  </data>
+  <data name="msgSubastaCerrarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al cerrar a subasta.</value>
+  </data>
+  <data name="msgSubastaCerrarExito" xml:space="preserve">
+    <value>La subasta ha sido cerrada satisfactoriamente.</value>
+  </data>
+  <data name="msgSubastaCerrarNo01" xml:space="preserve">
+    <value>No se puede cerrar la subasta porque a\xfan esta en curso.</value>
+  </data>
+  <data name="msgSubastaCerrarNo02" xml:space="preserve">
+    <value>Esta subasta ya esta se encuentra cerrada.</value>
+  </data>
+  <data name="msgSubastaCerrarNo03" xml:space="preserve">
+    <value>No se puede cerrar la subasta porque a\xfan no ha iniciado.</value>
+  </data>
+  <data name="msgSubastaConfirmarEliminar" xml:space="preserve">
+    <value>¿Esta Seguro de eliminar la subasta N° {0}?</value>
+  </data>
+  <data name="msgSubastaConfirmarModificar" xml:space="preserve">
+    <value>¿Esta seguro de modificar los datos de la subasta?</value>
+  </data>
+  <data name="msgSubastaConfirmarRegistro" xml:space="preserve">
+    <value>¿Esta seguro de registrar los datos de la subasta?</value>
+  </data>
+  <data name="msgSubastaErrorEliminar" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar la subasta.</value>
+  </data>
+  <data name="msgSubastaErrorRegistrar" xml:space="preserve">
+    <value>Ocurrio un error de sistema al registrar la subasta.</value>
+  </data>
+  <data name="msgSubastaExitoEliminar" xml:space="preserve">
+    <value>Se eliminó correctamente la subasta.</value>
+  </data>
+  <data name="msgSubastaExitoRegistrar" xml:space="preserve">
+    <value>Se registro la subasta satisfactoriamente.</value>
+  </data>
+  <data name="msgSubTipoArticuloEliminarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de eliminar el subtipo de artículo?</value>
+  </data>
+  <data name="msgSubTipoArticuloEliminarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar el subtipo de artículo.</value>
+  </data>
+  <data name="msgSubTipoArticuloEliminarExito" xml:space="preserve">
+    <value>Se eliminó satisfactoriamente el subtipo de artículo.</value>
+  </data>
+  <data name="msgSubTipoArticuloModificarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de modificar los datos del subtipo de artículo?</value>
+  </data>
+  <data name="msgSubTipoArticuloModificarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al modificar el subtipo de artículo.</value>
+  </data>
+  <data name="msgSubTipoArticuloModificarExito" xml:space="preserve">
+    <value>Se modificó satisfactoriamente el subtipo de artículo.</value>
+  </data>
+  <data name="msgSubTipoArticuloRegistrarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de registrar el subtipo de artículo?</value>
+  </data>
+  <data name="msgSubTipoArticuloRegistrarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar el subtipo de artículo.</value>
+  </data>
+  <data name="msgSubTipoArticuloRegistrarExito" xml:space="preserve">
+    <value>Se registro satisfactoriamente el subtipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloEliminarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de eliminar el tipo de artículo?</value>
+  </data>
+  <data name="msgTipoArticuloEliminarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al eliminar el tipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloEliminarExito" xml:space="preserve">
+    <value>Se eliminó satisfactoriamente el tipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloModificarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de modificar los datos del tipo de artículo?</value>
+  </data>
+  <data name="msgTipoArticuloModificarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al modificar el tipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloModificarExito" xml:space="preserve">
+    <value>Se modificó satisfactoriamente el tipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloRegistrarConfirmar" xml:space="preserve">
+    <value>¿Esta seguro de registrar el tipo de artículo?</value>
+  </data>
+  <data name="msgTipoArticuloRegistrarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al registrar el tipo de artículo.</value>
+  </data>
+  <data name="msgTipoArticuloRegistrarExito" xml:space="preserve">
+    <value>Se registro satisfactoriamente el tipo de artículo.</value>
+  </data>
+  <data name="msgUsuarioModificarConfirmar" xml:space="preserve">
+    <value>¿Desea modificar los datos del usuario?</value>
+  </data>
+  <data name="msgUsuarioModificarError" xml:space="preserve">
+    <value>Ocurrió un error de sistema al modificar los datos del usuario.</value>
+  </data>
+  <data name="msgUsuarioModificarExito" xml:space="preserve">
+    <value>Se modificó satisfactoriamente los datos del usuario.</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+Estimado Usuario: {usuario}
+<br/><br/>
+{cuerpo}
+<br/><br/>

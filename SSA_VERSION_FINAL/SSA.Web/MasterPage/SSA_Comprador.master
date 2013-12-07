@@ -1,0 +1,116 @@
+<%@ Master Language="VB" CodeFile="SSA_Comprador.master.vb" Inherits="MasterPage_SSA_Comprador" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; " />
+<title>Sistema de Subasta de Artículos</title>
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="../js/General.js"></script>
+</head>
+
+<body>
+<form id="frmPrincipal" runat="server">
+    <ajax:ScriptManager ID="sm_Principal" runat="server" EnablePartialRendering="true"
+            EnableScriptGlobalization="true">
+    </ajax:ScriptManager>
+    <asp:Literal runat="server" ID="lit_script"></asp:Literal>
+    
+        <ajax:UpdateProgress ID="upg_Progreso" runat="server" DisplayAfter="100">
+            <ProgressTemplate>
+                <div id="div_Proc" style="filter: progid:DxImageTransform.Microsoft.dropshadow(color='#e0e0e0', enabled='true', offX=3, offY=3);
+                    left: 10px; width: 100px; position: absolute; bottom: 10px; height: 30px; z-index: 5000">
+                    <table width="100" cellpadding="3" cellspacing="0" bgcolor="#ffffcc" style="border-right: #aeaeae 1px solid;
+                        border-top: #aeaeae 1px solid; border-left: #aeaeae 1px solid; border-bottom: #aeaeae 1px solid">
+                        <tr>
+                            <td style="width: 25px">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/masterpage/animated_loading.gif" /></td>
+                            <td style="color: black">
+                                <b>
+                                    <asp:Label ID="lbl_Text" runat="server" Text="Procesando"></asp:Label></b></td>
+                        </tr>
+                    </table>
+                </div>
+            </ProgressTemplate>
+        </ajax:UpdateProgress>
+        
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabla_pagina">
+  <tr>
+    <td class="contorno_sup_izq"></td>
+    <td class="contorno_sup_rep"></td>
+    <td class="contorno_sup_der"></td>
+  </tr>
+  <tr>
+    <td class="contorno_centro_izq">&nbsp;</td>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tabla_principal">
+      <tr>
+        <td class="cabecera"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="620" align="left"><img src="../Imagenes/masterpage/cabecera_izq.jpg" height="85" /></td>
+            <td>&nbsp;</td>
+            <td width="180" align="right">
+                <asp:Image ID="Image2" runat="server" 
+                    ImageUrl="~/Imagenes/masterpage/cabecera_der.jpg" />
+              </td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="menu">
+        <table width="100%" border="0" cellspacing="0" cellpadding="6">
+          <tr>
+            <td class="txt_blanco" style="padding-left:25px;">
+                <QNET:MultiMenu ID="mnuPricipal" runat="server" CurrentItemText="{0}" EnableHyperlinks="True"
+                    EnableSkipLink="true" EnableToolTips="false" EnableViewState="true" Height="10"
+                    ImagesUrlBase="~/imagenes" SkipLinkText="Skip menu navigation" StyleSheetUrl="~/CSS/MenuPrincipal.css"
+                    Width="0" WordWrap="False">
+                    <LevelItemClasses>
+                        <QNET:ItemClass Normal="MenuItem" Over="MenuItemOver" />
+                    </LevelItemClasses>
+                </QNET:MultiMenu>
+			</td>
+            <td align="right" class="txt_blanco"><img src="../Imagenes/masterpage/icono_candado.gif" alt="Cerrar Sesión" width="13" height="15" hspace="5" vspace="0" border="0" align="absmiddle" />
+                <asp:Label ID="lblNombreUsuario" runat="server" />&nbsp;
+                <asp:LinkButton ID="lkbSalir" runat="server" Text="(Salir)"  CausesValidation="false" CssClass="txt_amarillo" /> &nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="cuerpo" valign="top">
+        <!-- CUERPO (i) -->
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tabla_cuerpo">
+          <tr>
+            <td height="65" valign="middle" class="tit_01">
+            <img src="../Imagenes/masterpage/icono_administrar.jpg" align="absmiddle" />
+            <asp:Label ID="lblTitulo" runat="server"></asp:Label>            
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding:10px;padding-top:5px;">
+            <asp:ContentPlaceHolder ID="cph" runat="server">
+            
+            </asp:ContentPlaceHolder>
+              </td>
+          </tr>
+        </table>
+        <!-- CUERPO (f) -->
+        </td>
+      </tr>
+      <tr>
+        <td class="piedepag"><asp:Label ID="lblPiePagina" runat="server" /></td>
+      </tr>
+    </table></td>
+    <td class="contorno_centro_der">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="contorno_inf_izq"></td>
+    <td class="contorno_inf_rep"></td>
+    <td class="contorno_inf_der"></td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
+

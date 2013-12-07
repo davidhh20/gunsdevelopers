@@ -1,0 +1,4 @@
+Estimado Usuario:
+<br/><br/>
+Su clave es {clave}
+<br/><br/>
